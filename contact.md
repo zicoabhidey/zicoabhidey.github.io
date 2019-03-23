@@ -5,7 +5,7 @@ css: ["contact.css"]
 
 <div class="col s12">
   <div class="icontain">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?embedded=true" width=100% height=100%>Loading...</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?embedded=true" width:100% height:100%>Loading...</iframe>
   </div>
 </div>
 
