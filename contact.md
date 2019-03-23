@@ -3,7 +3,7 @@ layout: page
 ---
 
 <div id="iframe-container"
- style="overflow: hidden; position: relative;">
+ style="overflow: hidden; padding-top: 100%; position: relative;">
  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?embedded=true" allowfullscreen style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;"></iframe>
 </div>
 <!--
