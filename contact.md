@@ -9,7 +9,7 @@ css: ["contact.css"]
   width="100%" height="100%" 
   src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?embedded=true"
   frameborder="0" allowfullscreen=""
-  style="position:absolute; top:0; left: 0"></iframe>
+  style="position:relative; top:0; left: 0"></iframe>
 </div>
 <!--
 <div class="col s12">
