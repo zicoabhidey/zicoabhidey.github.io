@@ -17,6 +17,6 @@ css: ["contact.css"]
 </div>
 -->
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?embedded=true" width="100%" height="1000" align="middle" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWsm-F6TS0cv5MRILwmgKkwQ5lnlDZ1DfbRq8EuI4upC5e_g/viewform?usp=sf_link" width="100%" height="1000" align="middle" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
