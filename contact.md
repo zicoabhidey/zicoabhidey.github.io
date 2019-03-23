@@ -1,6 +1,5 @@
 ---
 layout: page
-css: ["contact.css"]
 ---
 
 <div id="iframe-container"
