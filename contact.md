@@ -1,5 +1,6 @@
 ---
 layout: page
+css: ["contact.css"]
 ---
 
 <!--
