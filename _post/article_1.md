@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Fixing Brackets Extension manager for Ubuntu 19.04 (Disco Dingo)"
+categories: Default
+tags: test Test
+comments: 1
+---
 # Fixing Brackets Extension manager for Ubuntu 19.04 (Disco Dingo)
 
 [Brackets](http://brackets.io/) is one of the most popular source code editor for web development. It is equipped with tons of useful extensions and fan favorite features like live preview.  
