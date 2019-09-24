@@ -1,0 +1,101 @@
+# Fixing Brackets Extension manager for Ubuntu 19.04 (Disco Dingo)
+
+[Brackets](http://brackets.io/) is one of the most popular source code editor for web development. It is equipped with tons of useful extensions and fan favorite features like live preview.  
+
+I am a huge fan of brackets. Bracket’s experimental live preview and extensions has saved couple of hours of my life not to mention hundred of browser tab refreshes.
+
+Thanks to my older machine, using windows has become a pain stacking experience. So, a few months back, I have decided to ditch windows completely and move to ubuntu 19.04.
+
+As the saying goes, 'in linux there is a problem with many solutions'. Here are some problems, I have encountered with brackets in linux with solutions! This guide may help you to save some time that you have planned to spent for digging through the community. Buy me drinks, if we meet someday.
+
+
+## 1. I have installed brackets with ubuntu software manager. Why is the extension manager is not showing any extensions? 
+
+Turns out to be a very simple problem. Just go to **debug -> switch language**. Change the **language** from **default** to **English** or any other language as you wish.  Restart brackets and extension manager should work just as it is supposed to.
+
+## 2. Why the font in Brackets is distorted?
+  
+This is something to do with **hinting** and **anti-aliasing**. It can be fixed with gnome tweak. If you do not have gnome tweaks, you can get it by running the following command in the terminal.
+```
+sudo apt install gnome-tweaks
+```
+Now just open gnome tweaks and go to **fonts** and set **hinting** to **slight** and **Antialiasing** to **standard** or **subpixel**. Tweak the font setting until you are satisfied.
+
+## 3. I can not install the debian package that I have downloaded from the brackets website with ubuntu software manager.
+This is particularly necessary if you want to download a older version of brackets for some reason.
+
+The problem is with **libcurl** dependencies. Ubuntu 19.04 comes with libcurl4 while brackets supports libcurl3. To verify this you can run
+```
+apt list libcurl4
+```
+This should return
+```
+Listing... Done
+
+libcurl4/disco-updates,disco-security,now 7.64.0-2ubuntu1.2 amd64 [installed,automatic]
+
+libcurl4/disco-updates,disco-security 7.64.0-2ubuntu1.2 i386
+```
+The list command shows the version of package installed. In a nutshell, this indicates that libcurl4 package is available
+
+Similarly,
+```
+apt list libcurl3
+```
+This should return
+```
+Listing... Done
+```
+Nothing appears like libcurl4 since, since there is no available package called libcurl3.
+
+At this point, there are **two possible solutions**. One is to downgrade libcurl4 to libcurl4. Another is to make brackets compatible with libcurl4. I have chosen the later. To justify my decision, lets extracts some more information about libcurl4.
+
+  
+```
+apt show libcurl4
+```
+Bunch of things will appear in terminal. The most important thing to notice is that, libcurl4 has conflict with libcurl3 and libcurl4 replaces libcurl3.
+
+  
+
+From my experience with linux, it is always a hassle to downgrade packages because of dependencies which might cause stability issues for others packages. Hence, I prefer not to downgrade any package unless I absolutely have to.
+
+  
+
+Enough of bragging, here is the solution.
+
+  
+
+We will de-package the debian package aka .deb file. 
+Step 1: Run **terminal to the directory of the .deb file** with the following command.
+
+  
+
+```dpkg-deb -R ./name_of_the_file.deb name_of_the_folder```
+
+Replace **name_of_the_file.deb** with your downloaded filename.deb. i.e. Brackets.Release.1.14.64-bit.deb. name_of_the_folder can be anything you want.
+
+Step 2: Edit file **name_of_the_folder/DEBIAN/control** and replace **libcurl3** with **libcurl4**
+
+  
+Step 3: Re package .deb with the following command
+
+```dpkg-deb -b name_of_the_folder name_of_the_modified_file.deb```
+name_of_the_folder should be the same folder set in step 1. name_of_the_modified_file is the filename that you want to set for the repackaged deb i.e. Brackets.Release.1.14.64-bit-fixed.deb
+
+Step 4: Install Brackets by double clicking on the repackaged .deb. Or if you want you can install through terminal.
+
+```sudo dpkg -i name_of_the_modified_file.deb```
+
+  
+
+Finally, if you decide to take the first solution, this cool article might help you.
+
+  
+
+[Using libcurl3 and libcurl4 on ubuntu 18.04 bionic](https://dev.to/jake/using-libcurl3-and-libcurl4-on-ubuntu-1804-bionic-184g)
+
+**Bonus :** Solving problem no. 3 with the aforementioned steps also automatically solves problem 1.
+  
+
+Through this article, my intention is to solve some problems regarding brackets in ubuntu 19.04. I hope this helps. I will add more brackets related problem, if I find any my be in the distant future. Till then happy coding.
