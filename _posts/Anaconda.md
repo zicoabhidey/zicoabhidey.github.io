@@ -1,1 +1,29 @@
+---
+layout: post
+title:  "Adding Anaconda Icon to Ubuntu Application"
+date:   2018-03-23 01:30:13 +0800
+categories: Default
+tags: Ubuntu Anaconda
+comments: 1
+---
+Anaconda provides access to python and numerous scietific packages used in data science. It eleminates the hassel of installing those scietific packages. Hence, it is highly popular in data science community.
+
+The main problem I have noticed after installing Anaconda navigator in Ubuntu is the absence of icon in the application drawer. Ideally, I would love to pin it in dock. Running anaconda-navigator command in terminal each time I want to launch navigator dashboard is not so convinient for me.
+
+The solution for my problem is to find a way to get a icon of some sort in app drawer which will let me to run navigator dashboard without terminal and then I will be able to pin it to dock.
+
+One of the characteristics of Ubuntu I am fond of is the amount of flexibility that a user has for customization. After digging under the hood, here is how it works. If I create a .desktop file with a specific format for any applications and save it to /home/usr/.local/share directory, a icon will show up in the app drawer.
+
+Here is the .desktop file for anaconda
+```bash
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Anaconda
+Exec=/home/usr/anaconda3/bin/anaconda-navigator
+Icon=/home/usr/anaconda3/anaconda.png
+Categories=Network;Application;
+```
+Everything is quite straight forward and self explanatory.
+Exec=/home/usr/anaconda3/bin/anaconda-navigator lets you execute anaconda-navigator file available in /home/usr/anaconda3/bin/ directory. This is basically the same thing happen when you manually type anaconda-navigator on terminal.
 
