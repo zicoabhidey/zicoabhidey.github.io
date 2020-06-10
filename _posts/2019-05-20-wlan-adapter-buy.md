@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Guide for buying Wireless lan adapter for Ubuntu in 2020"
-date:   2019-05-19 05:34:19 +0800
+date:   2020-04-19 05:34:19 +0800
 categories: Default
 tags: Ubuntu Anaconda
 comments: 1
@@ -20,5 +20,4 @@ sudo ./dkms-install.sh
 sudo modprobe 88XXau
 ```
 
-If you are not so sure which one to buy or do not want to research before buying, gentoo linux has a list of rtl8812au devices
-https://wiki.gentoo.org/wiki/AC1200_Wireless_Adapters
+If you are not so sure which one to buy or do not want to research before buying, gentoo linux has [a list of rtl8812au devices](https://wiki.gentoo.org/wiki/AC1200_Wireless_Adapters)
