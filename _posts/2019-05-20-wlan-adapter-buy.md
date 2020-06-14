@@ -6,9 +6,9 @@ categories: Default
 tags: Ubuntu Anaconda
 comments: 1
 ---
-Not all the oems write driver their own wireless lan adapter. You can found plathera of wlan nwtwork adapter available online from oems who does not provide proper support or instruction for setting up in linux.
+Not all the oems write driver for their own or mostly rebranded wireless lan adapter. You can found plathera of wlan adapter available online from oems who does not provide proper support or instruction for setting up in linux.
 
-The best way to choose a Wireless lan adapter based on its chipset inside. Then you can look for drivers online (in many cases available in github). I myself own a wlan adapter with rtl8812au chipset and will recommend you to to buy one.
+The best way to choose a Wireless lan adapter based on its chipset. Then you can look for drivers online (in many cases available in github). I myself own a wlan adapter with rtl8812au chipset and will recommend you to to buy one.
 
 Aircrack-ng has a repository available in github for rtl8812au driver. https://github.com/aircrack-ng/rtl8812au
 
