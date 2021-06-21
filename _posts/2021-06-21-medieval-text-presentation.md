@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "TEI Critical Apparatus Toolbox"
-date:   2019-05-20 05:34:19 +0800
+date:   2021-06-21 05:34:19 +0800
 categories: Default
 tags: Tool Presentation
 comments: 1
