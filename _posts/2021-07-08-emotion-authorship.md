@@ -8,7 +8,6 @@ comments: 1
 ---
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
 
-<p>
 <div id="ldavis_el1881400573940249126680619295"></div>
 <script type="text/javascript">
 
@@ -46,9 +45,6 @@ if(typeof(LDAvis) !== "undefined"){
          });
 }
 </script>
-</p>
-Mallet
-<p>
 
 
 <div id="ldavis_el1881400573940249126680619295"></div>
@@ -88,4 +84,3 @@ if(typeof(LDAvis) !== "undefined"){
          });
 }
 </script>
-</p>
