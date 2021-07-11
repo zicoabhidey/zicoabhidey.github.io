@@ -47,7 +47,7 @@ if(typeof(LDAvis) !== "undefined"){
 }
 </script>
 </p>
-
+Mallet
 <p>
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
