@@ -50,8 +50,6 @@ if(typeof(LDAvis) !== "undefined"){
 Mallet
 <p>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
-
 
 <div id="ldavis_el1881400573940249126680619295"></div>
 <script type="text/javascript">
