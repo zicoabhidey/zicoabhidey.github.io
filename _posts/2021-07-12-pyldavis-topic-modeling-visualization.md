@@ -9,7 +9,7 @@ comments: 1
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
 
-<div class="title" title="LDA Gensim">LDA Gensim</div> 
+<div><h4>LDA Gensim</h4></div> 
 <div id="ldavis_el1861399023200341282565626650"></div>
 <script type="text/javascript">
 
@@ -58,7 +58,7 @@ if(typeof(LDAvis) !== "undefined"){
   <li>By default, the terms of a topic are ranked in decreasing order according their topic-specific probability ( λ = 1 ). Moving the slider allows to adjust the rank of terms based on relevance for the specific topic.</li>
 </ul> 
 </div>
-<div class="title" title="LDA Mallet">LDA Mallet</div> 
+<div><h4>LDA Mallet</h4></div> 
 <div id="ldavis_el1861399031316672807184341412"></div>
 <script type="text/javascript">
 
