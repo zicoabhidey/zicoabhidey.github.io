@@ -9,7 +9,7 @@ comments: 1
 
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.3.1/pyLDAvis/js/ldavis.v1.0.0.css">
 
-<div><h4>LDA Gensim</h4></div> 
+<div><h4>LDA</h4></div> 
 <div id="ldavis_el1861399023200341282565626650"></div>
 <script type="text/javascript">
 
