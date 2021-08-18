@@ -43,3 +43,6 @@ exclude:
 sass:
   style: compressed
 future: true
+
+# Google Analytics
+google_analytics: UA-136848202-1
